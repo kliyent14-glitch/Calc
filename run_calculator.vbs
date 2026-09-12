@@ -1,6 +1,4 @@
 Set shell = CreateObject("WScript.Shell")
 folder = Left(WScript.ScriptFullName, InStrRev(WScript.ScriptFullName, "\"))
-script = folder & "calculator.ps1"
-command = "powershell.exe -NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -File """ & script & """"
-shell.Run command, 0, False
-
+launcher = folder & "run_calculator.cmd"
+shell.Run """" & launcher & """", 1, False
