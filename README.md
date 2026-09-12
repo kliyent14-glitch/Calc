@@ -1,7 +1,7 @@
-Калькулятор Windows
+Calculator for Windows
 
-Запуск: дважды щёлкните по `run_calculator.cmd`.
+Start: double-click `run_calculator.cmd`.
 
-Важно: скачайте весь репозиторий Calc целиком, чтобы рядом лежали `run_calculator.cmd` и `calculator.ps1`. Если скачать только один запускатель, калькулятор не откроется.
+Important: keep `run_calculator.cmd` and `calculator.ps1` in the same folder. If you copy only the launcher, the calculator will not open.
 
-Если Windows покажет предупреждение, разрешите запуск. Программа работает на Windows без браузера и без установки. Поддерживаются мышь, обычная клавиатура и цифровой блок: цифры, +, -, *, /, Enter, Backspace, Escape.
+The PowerShell version uses only plain ASCII symbols so it works correctly in older Windows PowerShell builds.
