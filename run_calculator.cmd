@@ -3,8 +3,8 @@ setlocal
 set "SCRIPT=%~dp0calculator.ps1"
 
 if not exist "%SCRIPT%" (
-  echo Ошибка: файл calculator.ps1 не найден рядом с запускателем.
-  echo Скачайте весь репозиторий Calc целиком, а не один файл.
+  echo Error: calculator.ps1 was not found next to this launcher.
+  echo Download or copy the full Calc folder, not only this launcher.
   pause
   exit /b 1
 )
@@ -12,6 +12,6 @@ if not exist "%SCRIPT%" (
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%SCRIPT%"
 if errorlevel 1 (
   echo.
-  echo Калькулятор не запустился. Текст ошибки показан выше.
+  echo Calculator did not start. The error text is shown above.
   pause
 )
